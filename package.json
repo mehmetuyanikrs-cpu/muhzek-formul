@@ -1,0 +1,17 @@
+{
+  "name": "muhzek-formul",
+  "version": "0.1.0",
+  "description": "eval'siz güvenli formül çözücü — recursive descent, beyaz listeli fonksiyonlar. Safe formula evaluator for user-supplied expressions (no eval, no Function).",
+  "keywords": ["formula", "expression-parser", "safe-eval", "engineering", "turkish"],
+  "license": "MIT",
+  "author": "Mehmet UYANIK (https://muhzekai.com)",
+  "repository": "github:mehmetuyanikrs-cpu/muhzek-formul",
+  "type": "module",
+  "exports": "./src/hesap.ts",
+  "scripts": {
+    "test": "tsx test/test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  }
+}
