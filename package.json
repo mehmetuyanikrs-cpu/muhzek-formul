@@ -2,16 +2,63 @@
   "name": "muhzek-formul",
   "version": "0.1.0",
   "description": "eval'siz güvenli formül çözücü — recursive descent, beyaz listeli fonksiyonlar. Safe formula evaluator for user-supplied expressions (no eval, no Function).",
-  "keywords": ["formula", "expression-parser", "safe-eval", "engineering", "turkish"],
+  "keywords": [
+    "formula",
+    "expression-parser",
+    "safe-eval",
+    "calculator",
+    "recursive-descent",
+    "engineering",
+    "turkish"
+  ],
   "license": "MIT",
   "author": "Mehmet UYANIK (https://muhzekai.com)",
-  "repository": "github:mehmetuyanikrs-cpu/muhzek-formul",
+  "homepage": "https://github.com/mehmetuyanikrs-cpu/muhzek-formul#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmetuyanikrs-cpu/muhzek-formul.git"
+  },
+  "bugs": "https://github.com/mehmetuyanikrs-cpu/muhzek-formul/issues",
   "type": "module",
-  "exports": "./src/hesap.ts",
+  "sideEffects": false,
+  "main": "./dist/hesap.cjs",
+  "module": "./dist/hesap.js",
+  "types": "./dist/hesap.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/hesap.d.ts",
+        "default": "./dist/hesap.js"
+      },
+      "require": {
+        "types": "./dist/hesap.d.cts",
+        "default": "./dist/hesap.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "test": "tsx test/test.ts"
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx test/test.ts",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
   },
   "devDependencies": {
-    "tsx": "^4.19.0"
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
