@@ -13,12 +13,12 @@
   ],
   "license": "MIT",
   "author": "Mehmet UYANIK (https://muhzekai.com)",
-  "homepage": "https://github.com/mehmetuyanikrs-cpu/muhzek-formul#readme",
+  "homepage": "https://github.com/mehmetuyanik-rs/muhzek-formul#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mehmetuyanikrs-cpu/muhzek-formul.git"
+    "url": "git+https://github.com/mehmetuyanik-rs/muhzek-formul.git"
   },
-  "bugs": "https://github.com/mehmetuyanikrs-cpu/muhzek-formul/issues",
+  "bugs": "https://github.com/mehmetuyanik-rs/muhzek-formul/issues",
   "type": "module",
   "sideEffects": false,
   "main": "./dist/hesap.cjs",

@@ -1,6 +1,6 @@
 # muhzek-formul
 
-[![CI](https://github.com/mehmetuyanikrs-cpu/muhzek-formul/actions/workflows/ci.yml/badge.svg)](https://github.com/mehmetuyanikrs-cpu/muhzek-formul/actions/workflows/ci.yml)
+[![CI](https://github.com/mehmetuyanik-rs/muhzek-formul/actions/workflows/ci.yml/badge.svg)](https://github.com/mehmetuyanik-rs/muhzek-formul/actions/workflows/ci.yml)
 [![Lisans: MIT](https://img.shields.io/badge/lisans-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A518-brightgreen.svg)](package.json)
 [![Bağımlılık](https://img.shields.io/badge/ba%C4%9F%C4%B1ml%C4%B1l%C4%B1k-yok-brightgreen.svg)](package.json)
